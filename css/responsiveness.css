@@ -1,0 +1,10 @@
+@media screen and (max-width: 768px) {
+    .intro {
+        flex-direction: column-reverse;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 3rem;
+    }
+
+}

@@ -1,0 +1,74 @@
+:root {
+    --color-bg: #1B2026;
+    --color-text: #CCD3DD;
+    --color-lemon: #BEAC24;
+
+    /* Default gradient = dark mode */
+    --gradient-1: #1B2026;
+    --gradient-2: #2e3b4e;
+    --gradient-3: #14171c;
+    --gradient-4: #3b4252;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    overflow-x: hidden;
+    color: var(--color-text);
+
+    /* Always animated gradient */
+    background: linear-gradient(-90deg,
+            var(--gradient-1),
+            var(--gradient-2),
+            var(--gradient-3),
+            var(--gradient-4));
+    background-size: 400% 400%;
+    animation: gradientMove 20s ease infinite;
+}
+
+/* Light Mode swaps only gradient variables */
+body.lightmode {
+    --gradient-1: var(--color-lemon);
+    --gradient-2: #f0f2f5;
+    --gradient-3: #d9e2ec;
+    --gradient-4: #ffffff;
+
+    color: var(--color-bg);
+}
+
+/* Dark Mode keeps defaults (optional, can omit) */
+body.darkmode {
+    --gradient-1: var(--color-bg);
+    --gradient-2: #2e3b4e;
+    --gradient-3: #14171c;
+    --gradient-4: #3b4252;
+
+    color: var(--color-text);
+}
+
+/* Animation keyframes */
+@keyframes gradientMove {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.navbar {
+    background-color: rgba(27, 32, 38, 0.6);
+    /* semi-transparent */
+    backdrop-filter: blur(10px);
+    /* blur the background behind */
+    -webkit-backdrop-filter: blur(10px);
+    /* for Safari support */
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    /* subtle line */
+}

@@ -1,0 +1,33 @@
+/* Button */
+.btn-lemon {
+    background-color: var(--color-lemon);
+    color: var(--color-bg);
+}
+
+.btn-outline-lemon {
+    background-color: transparent;
+    border: 1.5px solid var(--color-lemon);
+    color: var(--color-lemon);
+}
+
+body.lightmode .btn-outline-lemon {
+    background-color: transparent;
+    border: 1.5px solid var(--color-lemon);
+    color: var(--color-bg);
+}
+
+.btn-lemon:hover {
+    border: 1.5px solid var(--color-lemon);
+    color: var(--color-text);
+}
+
+body.lightmode .btn-lemon:hover {
+    border: 1.5px solid var(--color-lemon);
+    color: var(--color-bg);
+}
+
+.flex-between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
