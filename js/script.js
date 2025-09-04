@@ -1,15 +1,18 @@
 document.addEventListener('DOMContentLoaded', function () {
-    btnLemon();
+    toggleTheme();
     waveText(".wave-text");
 });
 
-function btnLemon() {
-    const themeToggleButton = document.querySelector('.btn-lemon');
+function toggleTheme() {
+    const themeToggleButton = document.querySelector('.themeMode');
     const body = document.body;
 
     themeToggleButton.addEventListener('click', function () {
         body.classList.toggle('darkmode');
         body.classList.toggle('lightmode');
+        document.querySelector('.themeMode').classList.toggle('bi-moon');
+        document.querySelector('.themeMode').classList.toggle('bi-sun');
+        document.querySelector('.themeMode').textContent = body.classList.contains('darkmode') ? ' dark' : ' light';
         document.querySelector('.navbar').classList.toggle('navbar-body');
     });
 
@@ -31,4 +34,4 @@ function waveText(className) {
             element.appendChild(span);
         });
     });
-}
+} 

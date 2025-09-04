@@ -1,4 +1,4 @@
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1399px) {
     .intro {
         flex-direction: column-reverse;
         display: flex;
@@ -6,5 +6,10 @@
         justify-content: center;
         gap: 3rem;
     }
+}
 
+@media screen and (min-height: 500px) {
+    .home {
+        /* padding: 130px 0; */
+    }
 }

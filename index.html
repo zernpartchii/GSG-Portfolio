@@ -7,16 +7,19 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Bitcount+Prop+Single:wght@100..900&family=Cal+Sans&family=DynaPuff:wght@400..700&family=Roboto:wght@100..900&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Bitcount+Prop+Single:wght@100..900&family=Cal+Sans&family=DynaPuff:wght@400..700&family=Gabarito:wght@400..900&family=Roboto:wght@100..900&family=Rubik+Mono+One&display=swap"
         rel="stylesheet">
+
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="/css/fontStyle.css">
     <link rel="stylesheet" href="/css/customStyle.css">
     <link rel="stylesheet" href="/css/responsiveness.css">
     <link rel="stylesheet" href="/css/home.css">
+    <link rel="stylesheet" href="/css/about.css">
     <script defer src="/js/script.js"></script>
     <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
@@ -25,19 +28,22 @@
 </head>
 
 <body class="darkmode">
-    <nav class="navbar navbar-expand-lg navbar-dark mb-5 sticky-top">
-        <div class="container-fluid">
-            <a class="navbar-brand fw-bold" href="#">GSG Portfolio</a>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top py-3 transparent">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">zernpartchii</a>
+            <div class="collapse navbar-collapse w-100" id="navbarSupportedContent">
                 <ul class="navbar-nav mx-auto mb-2 gap-4 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        <a class="nav-link active" aria-current="page" href="#home">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">About</a>
+                        <a class="nav-link" href="#about">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Skills</a>
+                        <a class="nav-link" href="#skills">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Experience</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Projects</a>
@@ -59,10 +65,8 @@
                     </li>
                 </ul>
             </div>
-            <div class="d-flex gap-3">
-                <button class="btn btn-lemon">
-                    <i class="bi bi-sun"></i> Darkmode
-                </button>
+            <div class="d-flex gap-2 flex-fill">
+                <button class="btn btn-outline-lemon bi bi-moon themeMode ms-auto"> dark</button>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
@@ -73,25 +77,62 @@
     </nav>
 
     <div class="container pb-3">
-        <div class="d-flex flex-wrap flex-between intro gap-5">
-            <div class="intro-text">
-                <p class="m-0 ps-2 fs-3 wave-text">Hello, I'm</p>
-                <h1 class="archivo-black-regular">GESZER SHANE <br> GUMAPAC</h1>
-                <p class="cal-sans-regular ps-1">Full Stack Developer</p>
-                <p class="ps-2 subtitle">
-                    Eager to explore new technologies and driven by continuous learning, I’m ready to grow,
-                    take on real-world challenges, and build impactful solutions with innovative teams.
-                </p>
-                <div class="d-flex gap-3">
-                    <a href="#" class="btn btn-lg btn-lemon">Contact Me</a>
-                    <a href="#" class="btn btn-lg btn-outline-lemon">Download CV</a>
+        <!-- Home Section -->
+        <div class="home space-top" id="home">
+            <div class="d-flex flex-wrap flex-between intro gap-5">
+                <div class="intro-text flex-fill">
+                    <p class="m-0 ps-2 fs-3 wave-text">Hello, I'm</p>
+                    <h1 class="archivo-black-regular">GESZER SHANE <br> GUMAPAC</h1>
+                    <p class="cal-sans-regular ps-1">Junior Developer</p>
+                    <p class="ps-2 subtitle">
+                        Eager to explore new technologies and driven by continuous learning, I’m ready to grow,
+                        take on real-world challenges, and build impactful solutions with innovative teams.
+                    </p>
+                    <div class="d-flex gap-3 ps-1">
+                        <a href="#" class="btn btn-lg btn-lemon">Contact Me</a>
+                        <a href="#" class="btn btn-lg btn-lemon download">Download CV</a>
+                    </div>
                 </div>
-            </div>
-            <div class="intro-img">
-                <img class="img-fluid profile" src="/img/profile.jpg" alt="profile">
+                <div class="intro-img flex-fill flex-center">
+                    <img class=" img-fluid profile" src="/img/profile.jpg" alt="profile">
+                </div>
             </div>
         </div>
 
+        <!-- About Section -->
+        <div class="about space-top rounded px-5" id="about">
+            <h1>About Me</h1>
+            <div class="d-flex flex-column gap-3 mb-3">
+                <div class="">
+                    <p class="justify-text fw-semibold">
+                        I am a versatile IT professional with skills in web development, programming, database
+                        management,
+                        and
+                        IT support. I have experience building web applications using HTML, CSS, JavaScript, React JS,
+                        Laravel
+                        and PHP, as well as managing data with MySQL, Firebase, and Power BI. Alongside development, I
+                        am
+                        proficient in troubleshooting hardware/software issues, networking hardware, and server
+                        maintenance.
+                        With strong problem-solving abilities and attention to detail, I aim to deliver reliable
+                        technical
+                        solutions and efficient digital tools.
+                    </p>
+                </div>
+                <div class="">
+                    <p><i class="bi bi-arrow-up-right-circle-fill"></i> August 2025</p>
+                    <!-- <h2 class="m-0">CUM LAUDE</h2> -->
+                    <h5 class="m-0">Bachelor of Science in Information Technology</h5>
+                    <h6 class="text-secondary">University of Mindanao - Tagum College</h6>
+                </div>
+
+                <div class="">
+                    <p><i class="bi bi-geo-alt-fill"></i> Location</p>
+                    <h5 class="m-0">New Corella, Davao del Norte</h5>
+                    <h6 class="text-secondary">Philippines</h6>
+                </div>
+            </div>
+        </div>
     </div>
 </body>
 

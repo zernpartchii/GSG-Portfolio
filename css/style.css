@@ -67,7 +67,7 @@ body.darkmode {
     }
 }
 
-.navbar {
+.transparent {
     background-color: rgba(27, 32, 38, 0.6);
     /* semi-transparent */
     backdrop-filter: blur(10px);
@@ -76,4 +76,12 @@ body.darkmode {
     /* for Safari support */
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     /* subtle line */
+}
+
+.text-lemon {
+    color: var(--color-lemon);
+}
+
+.space-top {
+    padding: 150px 0;
 }

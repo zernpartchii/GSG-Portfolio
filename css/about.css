@@ -1,0 +1,20 @@
+.about {
+    background-color: var(--color-dark);
+    animation: 2s slideUp ease forwards;
+}
+
+@keyframes slideUp {
+    from {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.webSubtitle {
+    max-width: 25rem;
+}

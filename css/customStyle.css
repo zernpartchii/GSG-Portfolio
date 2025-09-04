@@ -4,25 +4,44 @@
     color: var(--color-dark);
 }
 
+.btn-lemon.download {
+    background-color: transparent;
+    border: 1.5px solid var(--color-text);
+    color: var(--color-text);
+}
+
 .btn-outline-lemon {
+    background-color: transparent;
+    border: 1.5px solid var(--color-text);
+    color: var(--color-text);
+}
+
+.btn-lemon:hover {
+    background-color: #ad9c03;
+    border: 1.5px solid var(--color-lemon);
+    color: var(--color-dark);
+}
+
+.btn-lemon.download:hover {
     background-color: transparent;
     border: 1.5px solid var(--color-lemon);
     color: var(--color-lemon);
 }
 
-.btn-lemon:hover {
+.btn-outline-lemon:hover {
     border: 1.5px solid var(--color-lemon);
-    color: var(--color-text);
+    color: var(--color-lemon);
 }
 
-body.lightmode .btn-outline-lemon {
+body.lightmode .btn-outline-lemon.download {
     background-color: transparent;
     border: 1.5px solid var(--color-dark);
     color: var(--color-dark);
 }
 
-body.lightmode .btn-lemon:hover {
-    border: 1.5px solid var(--color-lemon);
+body.lightmode .btn-outline-lemon {
+    background-color: transparent;
+    border: 1.5px solid var(--color-text);
     color: var(--color-text);
 }
 
@@ -36,4 +55,10 @@ body.lightmode .btn-lemon:hover {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.justify-text {
+    text-align: justify;
+    text-justify: inter-word;
+    /* makes spacing more natural */
 }
