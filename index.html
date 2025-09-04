@@ -20,14 +20,18 @@
     <link rel="stylesheet" href="/css/responsiveness.css">
     <link rel="stylesheet" href="/css/home.css">
     <link rel="stylesheet" href="/css/about.css">
+    <link rel="stylesheet" href="/css/skills.css">
+    <link rel="stylesheet" href="/css/experience.css">
     <script defer src="/js/script.js"></script>
     <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
+
     <title>Geszer Portlio</title>
 </head>
 
 <body class="darkmode">
+    <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top py-3 transparent">
         <div class="container">
             <a class="navbar-brand fw-bold" href="#">zernpartchii</a>
@@ -43,7 +47,7 @@
                         <a class="nav-link" href="#skills">Skills</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Experience</a>
+                        <a class="nav-link" href="#experience">Experience</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Projects</a>
@@ -101,8 +105,8 @@
 
         <!-- About Section -->
         <div class="about space-top rounded px-5" id="about">
-            <h1>About Me</h1>
-            <div class="d-flex flex-column gap-3 mb-3">
+            <h1 class="text-white">About Me</h1>
+            <div class="d-flex flex-column gap-3 mb-3 text-white">
                 <div class="">
                     <p class="justify-text fw-semibold">
                         I am a versatile IT professional with skills in web development, programming, database
@@ -120,7 +124,7 @@
                     </p>
                 </div>
                 <div class="">
-                    <p><i class="bi bi-arrow-up-right-circle-fill"></i> August 2025</p>
+                    <p><i class="bi bi-arrow-up-right-circle-fill"></i> 2025 August</p>
                     <!-- <h2 class="m-0">CUM LAUDE</h2> -->
                     <h5 class="m-0">Bachelor of Science in Information Technology</h5>
                     <h6 class="text-secondary">University of Mindanao - Tagum College</h6>
@@ -130,6 +134,184 @@
                     <p><i class="bi bi-geo-alt-fill"></i> Location</p>
                     <h5 class="m-0">New Corella, Davao del Norte</h5>
                     <h6 class="text-secondary">Philippines</h6>
+                </div>
+            </div>
+        </div>
+
+        <!-- Skills Section -->
+        <div class="skills space-top" id="skills">
+            <h1 class="mb-5">Skills</h1>
+
+            <div class="d-flex flex-wrap flex-fill flex-between scroll-animate mb-5">
+                <div class="d-flex flex-column flex-fill">
+                    <h6 class="text-secondary">Web Development Skills</h6>
+                    <h1>Expertise in <br> <span class="text-lemon">Web Development</span></h1>
+                    <p class="justify-text webSubtitle">
+                        As a web developer, I specialize in creating responsive, user-friendly websites using modern
+                        technologies. My skills
+                        encompass both front-end and back-end development, allowing me to build comprehensive web
+                        solutions.
+                    </p>
+                </div>
+                <div class="d-flex gap-3 techStack flex-wrap flex-fill">
+                    <div class="card transparent text-white">
+                        <div class="card-body d-flex flex-column flex-center gap-2">
+                            <img class="img-fluid" src="/img/frontend/html.png" alt="html">
+                            <h6 class="m-0">HTML</h6>
+                        </div>
+                    </div>
+                    <div class="card transparent text-white">
+                        <div class="card-body d-flex flex-column flex-center gap-2">
+                            <img class="img-fluid" src="/img/frontend/css.png" alt="css">
+                            <h6 class="m-0">CSS</h6>
+                        </div>
+                    </div>
+                    <div class="card transparent text-white">
+                        <div class="card-body d-flex flex-column flex-center gap-2">
+                            <img class="img-fluid" src="/img/frontend/bootstrap.png" alt="bootstrap">
+                            <h6 class="m-0">Bootstrap</h6>
+                        </div>
+                    </div>
+                    <div class="card transparent text-white">
+                        <div class="card-body d-flex flex-column flex-center gap-2">
+                            <img class="img-fluid" src="/img/frontend/tailwind.png" alt="tailwind">
+                            <h6 class="m-0">Tailwind</h6>
+                        </div>
+                    </div>
+                    <div class="card transparent text-white">
+                        <div class="card-body d-flex flex-column flex-center gap-2">
+                            <img class="img-fluid" src="/img/frontend/javascript.png" alt="javascript">
+                            <h6 class="m-0">JavaScript</h6>
+                        </div>
+                    </div>
+                    <div class="card transparent text-white">
+                        <div class="card-body d-flex flex-column flex-center gap-2">
+                            <img class="img-fluid" src="/img/frontend/react.png" alt="react">
+                            <h6 class="m-0">React JS</h6>
+                        </div>
+                    </div>
+                    <div class="card transparent text-white">
+                        <div class="card-body d-flex flex-column flex-center gap-2">
+                            <img class="img-fluid" src="/img/frontend/laravel.png" alt="laravel">
+                            <h6 class="m-0">Laravel</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="d-flex flex-wrap flex-fill flex-between scroll-animate mb-5">
+                <div class="d-flex flex-column flex-fill">
+                    <h6 class="text-secondary">Software Engineering Skills</h6>
+                    <h1>Expertise in <br> <span class="text-lemon">Software Engineering</span></h1>
+                    <p class="justify-text webSubtitle">
+                        As a web developer, I specialize in creating responsive, user-friendly websites using modern
+                        technologies. My skills
+                        encompass both front-end and back-end development, allowing me to build comprehensive web
+                        solutions.
+                    </p>
+                </div>
+                <div class="d-flex gap-3 techStack flex-wrap flex-fill">
+                    <div class="card transparent text-white">
+                        <div class="card-body d-flex flex-column flex-center gap-2">
+                            <img class="img-fluid" src="/img/backend/php.png" alt="php">
+                            <h6 class="m-0">PHP</h6>
+                        </div>
+                    </div>
+                    <div class="card transparent text-white">
+                        <div class="card-body d-flex flex-column flex-center gap-2">
+                            <img class="img-fluid" src="/img/backend/nodejs.png" alt="php">
+                            <h6 class="m-0">Node JS</h6>
+                        </div>
+                    </div>
+                    <div class="card transparent text-white">
+                        <div class="card-body d-flex flex-column flex-center gap-2">
+                            <img class="img-fluid" src="/img/backend/java.png" alt="java">
+                            <h6 class="m-0">Java</h6>
+                        </div>
+                    </div>
+                    <div class="card transparent text-white">
+                        <div class="card-body d-flex flex-column flex-center gap-2">
+                            <img class="img-fluid" src="/img/backend/python.png" alt="python">
+                            <h6 class="m-0">Python
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="d-flex flex-wrap flex-fill flex-between scroll-animate mb-5">
+                <div class="d-flex flex-column flex-fill">
+                    <h6 class="text-secondary">Database Management Skills</h6>
+                    <h1>Expertise in <br> <span class="text-lemon">Database Management</span></h1>
+                    <p class="justify-text webSubtitle">
+                        I have strong skills in database management, including designing, implementing, and maintaining
+                        databases to ensure data integrity and accessibility. I am proficient in SQL and NoSQL
+                        databases,
+                        enabling efficient data storage and retrieval for various applications.
+                    </p>
+                </div>
+                <div class="d-flex gap-3 techStack flex-wrap flex-fill">
+                    <div class="card transparent text-white">
+                        <div class="card-body d-flex flex-column flex-center gap-2">
+                            <img class="img-fluid" src="/img/database/mysql.png" alt="mysql">
+                            <h6 class="m-0">MySQL</h6>
+                        </div>
+                    </div>
+                    <div class="card transparent text-white">
+                        <div class="card-body d-flex flex-column flex-center gap-2">
+                            <img class="img-fluid" src="/img/database/firebase.png" alt="firebase">
+                            <h6 class="m-0">Firebase</h6>
+                        </div>
+                    </div>
+                    <div class="card transparent text-white">
+                        <div class="card-body d-flex flex-column flex-center gap-2">
+                            <img class="img-fluid" src="/img/database/postgres.png" alt="postgres">
+                            <h6 class="m-0">Postgres</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="d-flex flex-wrap flex-fill flex-between scroll-animate mb-5">
+                <div class="d-flex flex-column flex-fill">
+                    <h6 class="text-secondary">Microsoft Power Platform Skills</h6>
+                    <h1>Proficient in <br> <span class="text-lemon">Microsoft Power Platform</span></h1>
+                    <p class="justify-text webSubtitle">
+                        I am proficient in Microsoft Power Platform, including Power BI, Power Apps, and Power Automate.
+                        I can create data visualizations, develop custom business applications, and automate workflows
+                        to enhance productivity and decision-making processes.
+                    </p>
+                </div>
+                <div class="d-flex gap-3 techStack flex-wrap flex-fill">
+                    <div class="card transparent text-white">
+                        <div class="card-body d-flex flex-column flex-center gap-2">
+                            <img class="img-fluid" src="/img/power-platform/sharepoint.png" alt="sharepoint">
+                            <h6 class="m-0">SharePoint</h6>
+                        </div>
+                    </div>
+                    <div class="card transparent text-white">
+                        <div class="card-body d-flex flex-column flex-center gap-2">
+                            <img class="img-fluid" src="/img/power-platform/power-bi.png" alt="powerbi">
+                            <h6 class="m-0">Power BI</h6>
+                        </div>
+                    </div>
+                    <div class="card transparent text-white">
+                        <div class="card-body d-flex flex-column flex-center gap-2">
+                            <img class="img-fluid" src="/img/power-platform/power-apps.png" alt="powerapps">
+                            <h6 class="m-0">Power Apps</h6>
+                        </div>
+                    </div>
+                    <div class="card transparent text-white">
+                        <div class="card-body d-flex flex-column flex-center gap-2">
+                            <img class="img-fluid" src="/img/power-platform/power-automate.png" alt="powerautomate">
+                            <h6 class="m-0">Power <br> Automate</h6>
+                        </div>
+                    </div>
+                    <div class="card transparent text-white">
+                        <div class="card-body d-flex flex-column flex-center gap-2">
+                            <img class="img-fluid" src="/img/power-platform/excel.png" alt="excel">
+                            <h6 class="m-0">Excel</h6>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

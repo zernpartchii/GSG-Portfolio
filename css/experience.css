@@ -1,0 +1,56 @@
+.work-experience {
+    background: var(--color-dark);
+    /* dark theme */
+    color: #CCD3DD;
+    border-left: 4px solid var(--color-lemon);
+    position: relative;
+}
+
+.work-experience h1 {
+    font-weight: bold;
+}
+
+.experience-item {
+    margin-bottom: 2rem;
+    padding-left: 1.5rem;
+    position: relative;
+}
+
+.experience-item::before {
+    content: "";
+    position: absolute;
+    left: -10px;
+    top: 5px;
+    width: 15px;
+    height: 15px;
+    background: var(--color-lemon);
+    border-radius: 50%;
+}
+
+.exp-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: .5rem;
+}
+
+.exp-header h4 {
+    margin: 0;
+    font-weight: bold;
+    color: #fff;
+}
+
+.exp-date {
+    font-size: 0.9rem;
+    color: #aaa;
+}
+
+.experience-item ul {
+    margin: 0;
+    padding-left: 1.2rem;
+}
+
+.experience-item li {
+    margin-bottom: .4rem;
+    line-height: 1.5;
+}
