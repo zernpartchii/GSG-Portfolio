@@ -1,13 +1,18 @@
 :root {
-    --color-bg: #1B2026;
-    --color-text: #CCD3DD;
+    --color-dark: #0d0d0d;
+    --color-text: #e0e0e0;
     --color-lemon: #BEAC24;
+    /* Lemon accent */
 
-    /* Default gradient = dark mode */
-    --gradient-1: #1B2026;
-    --gradient-2: #2e3b4e;
-    --gradient-3: #14171c;
-    --gradient-4: #3b4252;
+    /* Default gradient = dark neon */
+    --gradient-1: #0d0d0d;
+    /* deep dark */
+    --gradient-2: #1f1f3a;
+    /* midnight blue */
+    --gradient-3: #242424;
+    /* dark gray */
+    --gradient-4: var(--color-lemon);
+    /* neon lemon accent */
 }
 
 body {
@@ -17,32 +22,32 @@ body {
     overflow-x: hidden;
     color: var(--color-text);
 
-    /* Always animated gradient */
+    /* Animated neon gradient */
     background: linear-gradient(-90deg,
             var(--gradient-1),
             var(--gradient-2),
             var(--gradient-3),
             var(--gradient-4));
     background-size: 400% 400%;
-    animation: gradientMove 20s ease infinite;
+    animation: gradientMove 15s ease infinite;
 }
 
-/* Light Mode swaps only gradient variables */
+/* Light Mode with lemon neon pop */
 body.lightmode {
     --gradient-1: var(--color-lemon);
-    --gradient-2: #f0f2f5;
-    --gradient-3: #d9e2ec;
+    --gradient-2: #f7f7f7;
+    --gradient-3: #e8e8e8;
     --gradient-4: #ffffff;
 
-    color: var(--color-bg);
+    color: #111111;
 }
 
-/* Dark Mode keeps defaults (optional, can omit) */
+/* Dark Mode */
 body.darkmode {
-    --gradient-1: var(--color-bg);
-    --gradient-2: #2e3b4e;
-    --gradient-3: #14171c;
-    --gradient-4: #3b4252;
+    --gradient-1: var(--color-lemon);
+    --gradient-2: #1f1f3a;
+    --gradient-3: #242424;
+    --gradient-4: #0d0d0d;
 
     color: var(--color-text);
 }

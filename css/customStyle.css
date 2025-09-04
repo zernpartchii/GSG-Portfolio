@@ -1,7 +1,7 @@
 /* Button */
 .btn-lemon {
     background-color: var(--color-lemon);
-    color: var(--color-bg);
+    color: var(--color-dark);
 }
 
 .btn-outline-lemon {
@@ -10,24 +10,30 @@
     color: var(--color-lemon);
 }
 
-body.lightmode .btn-outline-lemon {
-    background-color: transparent;
-    border: 1.5px solid var(--color-lemon);
-    color: var(--color-bg);
-}
-
 .btn-lemon:hover {
     border: 1.5px solid var(--color-lemon);
     color: var(--color-text);
 }
 
+body.lightmode .btn-outline-lemon {
+    background-color: transparent;
+    border: 1.5px solid var(--color-dark);
+    color: var(--color-dark);
+}
+
 body.lightmode .btn-lemon:hover {
     border: 1.5px solid var(--color-lemon);
-    color: var(--color-bg);
+    color: var(--color-text);
 }
 
 .flex-between {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+}
+
+.flex-center {
+    display: flex;
+    justify-content: center;
     align-items: center;
 }
