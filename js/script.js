@@ -6,6 +6,8 @@ document.addEventListener('DOMContentLoaded', function () {
     window.addEventListener("scroll", handleScroll);
     handleScroll(); // run once on load
 
+    document.querySelector('#year').textContent = new Date().getFullYear();
+
     function handleScroll() {
         elements.forEach(el => {
             const rect = el.getBoundingClientRect();

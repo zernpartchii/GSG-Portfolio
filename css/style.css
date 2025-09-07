@@ -67,6 +67,15 @@ body.darkmode {
     }
 }
 
+.carousel-item {
+    background-color: var(--color-dark);
+}
+
+.bg-lemon {
+    background-color: var(--color-dark);
+    color: var(--color-text);
+}
+
 .transparent {
     background-color: rgba(27, 32, 38, 0.6);
     /* semi-transparent */
