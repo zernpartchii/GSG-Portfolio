@@ -13,11 +13,21 @@ document.addEventListener('DOMContentLoaded', function () {
 
     navLinks.forEach(function (link) {
         link.addEventListener('click', function () {
+            // remove active from all links first
+            navLinks.forEach(function (nav) {
+                nav.classList.remove('active');
+            });
+
+            // add active to the clicked link
+            this.classList.add('active');
+
+            // close the navbar on mobile after click
             if (navbarCollapse.classList.contains('show')) {
                 new bootstrap.Collapse(navbarCollapse).hide();
             }
         });
     });
+
 
     function handleScroll() {
         elements.forEach(el => {
