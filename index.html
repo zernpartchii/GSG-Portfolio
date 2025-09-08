@@ -21,7 +21,7 @@
     <link rel="stylesheet" href="/css/home.css">
     <link rel="stylesheet" href="/css/about.css">
     <link rel="stylesheet" href="/css/skills.css">
-    <link rel="stylesheet" href="/css/experience.css">
+    <link rel="stylesheet" href="/css/timeline.css">
     <link rel="stylesheet" href="/css/projects.css">
 
     <script defer src="/js/script.js"></script>
@@ -36,7 +36,7 @@
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top py-3 transparent">
         <div class="container">
-            <a class="navbar-brand fw-bold" href="#">zernpartchii</a>
+            <a class="navbar-brand fw-bold" href="#">GESZER</a>
             <div class="collapse navbar-collapse w-100" id="navbarSupportedContent">
                 <ul class="navbar-nav mx-auto mb-2 gap-4 mb-lg-0">
                     <li class="nav-item">
@@ -49,7 +49,7 @@
                         <a class="nav-link" href="#skills">Skills</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#experience">Experience</a>
+                        <a class="nav-link" href="#timeline">Timeline</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#projects">Projects</a>
@@ -57,23 +57,11 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#certifications">Certifications</a>
                     </li>
-                    <!-- <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                            Services
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Web Development Services</a></li>
-                            <li><a class="dropdown-item" href="#">Data & Business Solutions</a></li>
-                            <li><a class="dropdown-item" href="#">IT Support & Maintenance</a></li>
-                            <li><a class="dropdown-item" href="#">Collaboration & Productivity Tools</a></li>
-                        </ul>
-                    </li> -->
                 </ul>
             </div>
             <div class="d-flex gap-2 flex-fill">
                 <button class="btn btn-outline-lemon bi bi-moon themeMode ms-auto d-none"> dark</button>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -418,15 +406,61 @@
             </div>
         </div>
 
-        <!-- Experience Section -->
-        <div class=" work-experience scroll-animate space-top px-5" id="experience">
-            <h1 class="mb-4 text-lemon scroll-animate"><i class="bi bi-briefcase-fill"></i> Work Experience</h1>
+        <!-- Timeline Section -->
+        <div class=" work-timeline scroll-animate space-top px-5" id="timeline">
+            <h1 class="mb-4 text-lemon scroll-animate"><i class="bi bi-clock-fill"></i> Timeline</h1>
+
+            <!-- Education -->
+            <div class="timeline-item scroll-animate">
+                <div class="exp-header">
+                    <h4>BS Information Technology</h4>
+                    <span class="exp-date">Graduated on August 2025 <br> UM Tagum College</span>
+                </div>
+                <h6 class="text-secondary">CUM LAUDE</h6>
+                <ul>
+                    <li>
+                        I have earned my diploma in Information Technology, where I gained valuable knowledge in
+                        computer hardware, database
+                        management, data structures and algorithms, various programming languages, and the principles of
+                        the Internet of Things.
+                        My academic journey has strengthened my technical foundation and continues to guide my growth in
+                        the IT field.
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Internship -->
+            <div class="timeline-item scroll-animate">
+                <div class="exp-header">
+                    <h4>SharePoint/Power Platform Solution Developer</h4>
+                    <span class="exp-date">April 2025 – July 2025</span>
+                </div>
+                <h6 class="text-secondary">Internship Experience</h6>
+                <ul>
+                    <li>
+                        Developed a digital workflow and centralized SharePoint system to streamline requests and
+                        improve collaboration across departments
+                    </li>
+                    <li>
+                        Developed a custom Power Apps form integrated with SharePoint lists, enabling seamless
+                        request submissions and real-time data capture.
+                    </li>
+                    <li>
+                        Automated approvals and notifications using Power Automate, reducing manual admin
+                        workload and ensuring timely task completion.
+                    </li>
+                    <li>
+                        Created interactive Power BI dashboards leveraging SharePoint data, providing leadership
+                        with real-time insights into request status, process bottlenecks, and team performance.
+                    </li>
+                </ul>
+            </div>
 
             <!-- Freelancer -->
-            <div class="experience-item scroll-animate">
+            <div class="timeline-item scroll-animate">
                 <div class="exp-header">
                     <h4>Freelancer</h4>
-                    <span class="exp-date">Jan 2020 – Dec 2024</span>
+                    <span class="exp-date">Jan 2021 – March 2025</span>
                 </div>
                 <h6 class="text-secondary">Web & Mobile Development</h6>
                 <ul>
@@ -442,7 +476,7 @@
             </div>
 
             <!-- UM Tagum -->
-            <div class="experience-item scroll-animate">
+            <div class="timeline-item scroll-animate">
                 <div class="exp-header">
                     <h4>UM Tagum College – Student Assistant</h4>
                     <span class="exp-date">Jan 2023 – Jun 2023</span>
@@ -455,10 +489,32 @@
                     <li>Collaborated with team members to streamline workflow and improve efficiency.</li>
                 </ul>
             </div>
+
+            <!-- Data Entry -->
+            <div class="timeline-item scroll-animate">
+                <div class="exp-header">
+                    <h4>Data Entry</h4>
+                    <span class="exp-date">July 2020 – December 2022</span>
+                </div>
+                <ul>
+                    <li>
+                        Performed data entry and document preparation for small businesses and individual clients.
+                    </li>
+                    <li>
+                        Maintained accurate databases and ensured timely updating of client records.
+                    </li>
+                    <li>
+                        Created spreadsheets in Excel/Google Sheets for data tracking and reporting
+                    </li>
+                    <li>
+                        Delivered error-free data entry services with focus on speed and accuracy.
+                    </li>
+                </ul>
+            </div>
         </div>
 
         <!-- Projects Section -->
-        <div class=" projects scroll-animate space-top px-5" id="projects">
+        <div class=" projects scroll-animate space-top" id="projects">
             <h1 class="mb-4 text-lemon scroll-animate">
                 <i class="bi bi-briefcase-fill"></i> Projects
             </h1>
@@ -1151,7 +1207,7 @@
         </div>
 
         <!-- Contact Section -->
-        <div class="contact space-top" id="contact">
+        <div class=" contact space-top" id="contact">
             <div class="container">
                 <h1 class="text-center mb-5">Contact Me</h1>
                 <div class="row justify-content-center">

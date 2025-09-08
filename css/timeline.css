@@ -1,4 +1,4 @@
-.work-experience {
+.work-timeline {
     /* background: var(--color-dark); */
     /* dark theme */
     color: #CCD3DD;
@@ -6,17 +6,17 @@
     position: relative;
 }
 
-.work-experience h1 {
+.work-timeline h1 {
     font-weight: bold;
 }
 
-.experience-item {
+.timeline-item {
     margin-bottom: 2rem;
     padding-left: 1.5rem;
     position: relative;
 }
 
-.experience-item::before {
+.timeline-item::before {
     content: "";
     position: absolute;
     left: -10px;
@@ -27,12 +27,12 @@
     border-radius: 50%;
 }
 
-.exp-header {
+/* .exp-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: .5rem;
-}
+} */
 
 .exp-header h4 {
     margin: 0;
@@ -41,16 +41,16 @@
 }
 
 .exp-date {
-    font-size: 0.9rem;
+    font-size: 1rem;
     color: #aaa;
 }
 
-.experience-item ul {
+.timeline-item ul {
     margin: 0;
     padding-left: 1.2rem;
 }
 
-.experience-item li {
+.timeline-item li {
     margin-bottom: .4rem;
     line-height: 1.5;
 }
