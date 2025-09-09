@@ -1,0 +1,109 @@
+:root {
+    --color-dark: #0d0d0d;
+    --color-text: #e0e0e0;
+    --color-lemon: #BEAC24;
+    /* Lemon accent */
+
+    /* Default gradient = dark neon */
+    --gradient-1: #0d0d0d;
+    /* deep dark */
+    --gradient-2: #1f1f3a;
+    /* midnight blue */
+    --gradient-3: #242424;
+    /* dark gray */
+    --gradient-4: var(--color-lemon);
+    /* neon lemon accent */
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    overflow-x: hidden;
+    color: var(--color-text);
+
+    /* Animated neon gradient */
+    background: linear-gradient(-90deg,
+            var(--gradient-1),
+            var(--gradient-2),
+            var(--gradient-3),
+            var(--gradient-4));
+    background-size: 400% 400%;
+    animation: gradientMove 15s ease infinite;
+}
+
+/* Light Mode with lemon neon pop */
+body.lightmode {
+    --gradient-1: var(--color-lemon);
+    --gradient-2: #f7f7f7;
+    --gradient-3: #e8e8e8;
+    --gradient-4: #ffffff;
+
+    color: #111111;
+}
+
+/* Dark Mode */
+body.darkmode {
+    --gradient-1: var(--color-lemon);
+    --gradient-2: #1f1f3a;
+    --gradient-3: #242424;
+    --gradient-4: #0d0d0d;
+
+    color: var(--color-text);
+}
+
+/* Animation keyframes */
+@keyframes gradientMove {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.carousel-item {
+    background-color: var(--color-dark);
+}
+
+.bg-lemon {
+    background-color: var(--color-dark);
+    color: var(--color-text);
+}
+
+.transparent {
+    background-color: rgba(27, 32, 38, 0.6);
+    /* semi-transparent */
+    backdrop-filter: blur(10px);
+    /* blur the background behind */
+    -webkit-backdrop-filter: blur(10px);
+    /* for Safari support */
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    /* subtle line */
+}
+
+.text-lemon {
+    color: var(--color-lemon);
+}
+
+.space-top {
+    padding: 150px 0;
+}
+
+/* Base state before visible */
+.scroll-animate {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 2s ease, transform 2s ease;
+}
+
+/* Active state when visible */
+.scroll-animate.active {
+    opacity: 1;
+    transform: translateY(0);
+}
